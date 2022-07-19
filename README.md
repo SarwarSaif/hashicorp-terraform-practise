@@ -135,3 +135,6 @@ rogalmic
 ```
 
 
+### Ref
+1. Why .terraform.lock.hcl file is needed to push into Version Control?
+https://qiita.com/asdasda/items/b8becb672ad572897c25
