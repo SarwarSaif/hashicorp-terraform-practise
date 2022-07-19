@@ -138,3 +138,7 @@ rogalmic
 ### Ref
 1. Why .terraform.lock.hcl file is needed to push into Version Control?
 https://qiita.com/asdasda/items/b8becb672ad572897c25
+2. To create a Private GKE Cluster using terraform
+https://github.com/gruntwork-io/terraform-google-gke/blob/v0.10.0/examples/gke-private-cluster/main.tf
+3. 
+
