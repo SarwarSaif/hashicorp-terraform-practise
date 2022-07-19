@@ -134,11 +134,31 @@ rogalmic
 455,874
 ```
 
+### to remove the follwoing Error:
+```
+my_vm_instance@instance-1:~/terraform/hashicorp-terraform-practise/terraform-on-gcp$ ./plan.sh first_instance/
+./plan.sh: line 2: $'\r': command not found
+./plan.sh: line 4: $'\r': command not found
+./plan.sh: line 6: $'\r': command not found
+./plan.sh: line 11: $'\r': command not found
+./plan.sh: line 13: $'\r': command not found
+./plan.sh: line 16: $'\r': command not found
+./plan.sh: line 18: $'\r': command not found
+./plan.sh: line 42: syntax error: unexpected end of file
+```
+Use
+```
+sed -i 's/\r$//'  ./plan.sh
+sed -i 's/\r$//'  ./apply.sh
+sed -i 's/\r$//'  ./destroy.sh
+```
 
 ### Ref
 1. Why .terraform.lock.hcl file is needed to push into Version Control?
 https://qiita.com/asdasda/items/b8becb672ad572897c25
 2. To create a Private GKE Cluster using terraform
 https://github.com/gruntwork-io/terraform-google-gke/blob/v0.10.0/examples/gke-private-cluster/main.tf
-3. 
+3. '\r': command not found - .bashrc / .bash_profile [duplicate]
+https://stackoverflow.com/questions/11616835/r-command-not-found-bashrc-bash-profile
+4. 
 

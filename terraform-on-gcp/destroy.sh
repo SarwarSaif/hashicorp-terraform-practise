@@ -27,15 +27,16 @@ exit
 fi
 
 ######################################################################################
-
+# Go to the directory
+cd $1
 # The Init command is used to initialize a working directory containing Terraform configuration files.
 # This is the first command that should be run after writing a new Terraform configuration
-terraform init $1
+terraform init
 
 #The Get command is used to download and update modules mentioned in the root module.
-terraform get $1
+terraform get 
 
 #The Plan command is used to create an execution plan
-terraform destroy -auto-approve $1 
+terraform destroy -auto-approve 
 
 ######################################################################################
