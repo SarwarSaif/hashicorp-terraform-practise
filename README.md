@@ -160,5 +160,5 @@ https://qiita.com/asdasda/items/b8becb672ad572897c25
 https://github.com/gruntwork-io/terraform-google-gke/blob/v0.10.0/examples/gke-private-cluster/main.tf
 3. '\r': command not found - .bashrc / .bash_profile [duplicate]
 https://stackoverflow.com/questions/11616835/r-command-not-found-bashrc-bash-profile
-4. 
+4. g
 
