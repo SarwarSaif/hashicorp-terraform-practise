@@ -15,6 +15,20 @@ variable "CREDENTIALS_PATH" {
     type = string
     description = "The path on your local computer where you stored all your credentials"
 }
+variable "INSTANCE_NAME" {
+    type = string
+    description = "The instance name of your vm on GCP"
+}
+variable "MACHINE_TYPE" {
+    type = string
+    description = "The machine type of your vm on GCP"
+}
+variable "OS_IMAGE" {
+    type = string
+    description = "The os image type of your vm on GCP"
+}
+
+
 
 
 # Setup 
@@ -23,4 +37,3 @@ provider "google" {
     region = "${var.ZONE}"
     credentials = "${file("${var.CREDENTIALS_PATH}")}"
 }
-
